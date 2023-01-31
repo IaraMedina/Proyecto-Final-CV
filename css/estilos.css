@@ -1,0 +1,452 @@
+/* Selecciona el elemento raíz del documento:
+   <html> en el caso de HTML */
+   :root {
+    background: black;
+  }
+  
+
+*{
+    font-family: 'Garabond';
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    text-transform: none;
+    transition: 2s ease;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    padding-left: 30rem; 
+ }
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3rem 0 5rem 0;
+    height: 100%;
+    width: 25rem;
+    background-color:tan;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    color: violet;
+
+}
+
+header .usuario img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50% ;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: .4rem solid black;
+}
+
+header .usuario .nombre{
+    font-size: 2.1rem;
+    margin-top: 0;
+    margin-bottom:0;
+    color: black;
+
+}
+
+header .usuario .post{
+    margin-top: 2%;
+    margin-bottom: 0;  
+    font-size: 1.3rem;
+    color: black;
+}
+
+header .navbar {
+    width: 100%;
+    
+}
+
+header .navbar ul{
+    margin-top:0;
+    list-style: none;
+    padding: 1rem 2rem;
+}
+
+header .navbar ul li a{
+    border-left: .3rem solid white;
+    border-right: .3rem solid white;
+    display: block;
+    padding: 0.7rem;
+    margin: 1rem 0;
+    background-color: black;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:white;
+} 
+
+header .navbar ul li a:hover{
+    background:white; 
+    color:black;
+    border: black;
+    border-left: .3rem solid black;
+    border-right: .3rem solid black;
+}
+
+section {
+    height:2px;
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+
+.presentacion{
+    margin-bottom: 3rem;
+    padding: 0 2rem 1rem 2rem;
+    background-color: black;
+    border: .4rem double tan;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    align-items: center;
+
+}
+
+.presentacion h2{
+    margin-top: 4rem;
+    font-size: 2.1rem;
+}
+
+.presentacion h1{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.presentacion p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height:2.5rem;
+}
+
+
+.btn{
+    font-weight: bold;
+    margin: 2rem;
+    padding: .6rem 3rem .6rem 3rem;
+    background-color: tan;
+    color: black;
+    cursor:pointer;
+    border: .15rem double white;
+    border-radius: 30px;   
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+
+.btn:hover{
+    background:white;
+    color: black;
+    border-color: tan;
+
+}
+
+.heading {  
+    padding-top: 1.5rem ;
+    font-size:1.8rem;
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-color: tan;
+}
+
+.estudios{
+    margin-bottom: 4rem;
+    padding: 1rem 2rem 0rem 2rem;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: .4rem double tan;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.estudios .box-container {
+    padding: .3rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap; 
+}
+
+.estudios .box-container .box{
+    border-bottom: .3rem double tan;
+    height: 10rem;  
+    padding-left: .5rem;
+    width: 12rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
+
+.estudios .box-container .box span{
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
+    padding: .3rem .3rem .3rem;
+    border: .1rem solid tan;
+    margin-left: 1rem;
+}
+
+.estudios .box-container .box h3{
+    margin-top: .7rem;
+    font-size: 1.3rem;
+    padding: .5rem 0 0 0;
+    margin-left: .5rem;
+}
+
+.estudios .box-container .box ul{
+    margin-top: .4rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    
+}
+
+
+.estudios .box-container .box p{
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    margin-left: .5rem;
+}
+
+
+.estudios .box-container .box i{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+    }
+
+
+
+.experiencia{
+    margin-bottom: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: black;
+    border: .4rem double tan;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+
+}
+
+.experiencia .box-container{
+        margin-top: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap; 
+}
+
+.experiencia .box-container span{
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
+    padding: .3rem .3rem .3rem;
+    border: .1rem solid tan;
+}
+
+.experiencia .box-container .box{
+    border-left: .3rem double tan;
+    padding: 0 1rem 0 1rem;
+
+
+}
+.experiencia .box-container .box h3{
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+
+}
+
+
+.experiencia .box-container .box ol{
+    margin-top:.4rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
+
+
+
+
+
+.habilidades{
+    margin-bottom: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: black;
+    border: .4rem double tan;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+
+}
+
+.habilidades span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: .3rem .3rem .3rem;
+    border: .1rem solid tan;
+}
+
+
+.habilidades .box-container{
+        margin: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap; 
+
+}
+
+
+.habilidades .box-container .box{
+    height: 10rem;  
+    border-left: .3rem double black;
+    padding: 0 1rem 0 1rem;
+
+
+}
+
+
+.habilidades .box-container .box ol{
+    margin-top:1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+
+
+.contacto{
+    border: .4rem double tan;
+    border-radius: 20px;
+    background-color: black;
+    height: fit-content;
+    color: white;
+
+}
+
+.contacto .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+        margin-bottom: -4rem;
+}
+
+.contacto .row .content{
+    flex: 1 1 30rem;
+    padding: 2rem 2rem 2rem 4rem;
+    text-align: center;
+    
+}
+
+.contacto .row form{
+    color: white;
+    padding: 0 4rem 4rem 4rem ;
+
+}
+
+.contacto .row form .box{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 20rem;
+    border-bottom: solid white;
+    background-color: tan;
+    cursor:pointer;
+
+}
+
+.contacto .row form .btn{
+        margin-left: 15rem;
+}
+
+::placeholder{
+    padding-left: 1rem;
+    color: black;
+}
+
+.contacto .row form .message{
+    height: 10rem;
+    resize: none;
+    border-radius: 1rem;
+}
+
+.contacto .row .content .title{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.contacto .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: .5rem 0 .5rem;
+    font-weight: normal;
+}
+
+.contacto .row .content .info h3 i{
+    padding-right: .5rem;
+    color: var(--black);
+}
+
+
+.box .btn{
+    margin: 3rem 0 3rem 10rem;
+    background-color: white;
+    border-color: tan;
+}
+
+.box .btn:hover{
+    background-color: black;
+    border-color: white;
+    color: tan;
+}
+
+
+
+
