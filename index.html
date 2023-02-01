@@ -22,7 +22,7 @@
 
     <header>
         <div class="usuario">
-            <img src="img/gato.jpg" alt="" onerror="myFunction()">
+            <img src="img/WR.jpg" alt="" onerror="myFunction()">
             <h2 class="nombre">Willard J. Rice</h2>
             <p class="post">Diseñador Web & Marketing</p>
         </div>
@@ -106,7 +106,7 @@
                     <i class="fas fa-address-book"></i>
                     2019 - 2020
                 </span>
-                <h3>Curso
+                <h3>Cursos
                     <ul> 
                         <li>Administración</li>
                         <li>Negocios</li>
@@ -121,7 +121,7 @@
                     <i class="fas fa-network-wired"></i>
                     2020 - 2021
                 </span>
-                 <h3>Curso
+                 <h3>Cursos
                     <ul> 
                         <li>Manejo de Redes</li>
                         <li>Redes Informáticas</li>
@@ -276,7 +276,7 @@
          </div>
 
         <a href="#contacto">
-           g <button class="btn"> <i class="fas fa-phone"></i>
+            <button class="btn"> <i class="fas fa-phone"></i>
                 Contáctame
             </button>
         </a>
@@ -302,7 +302,7 @@
                 <input required type="email" placeholder="Email" class="box">
                 <input required type="text" placeholder="Asunto" class="box">
                 <textarea name="" id="Mensaje" cols="25" rows="15" class="box message" placeholder="Mensaje"></textarea>
-                <button type="submit" class="btn" > Enviar <i class="fas fa-paper-plane"></i></button>
+                <button type="submit" class="btn" id="botonEnviar"  > Enviar <i class="fas fa-paper-plane"></i></button>
             </form> 
                     
         </div>
@@ -311,21 +311,29 @@
   <!--FIN CONTACTO-->
 
 
-    <div class="box">
-        <a href="#presentacion">
-            <button class="btn"> <i class="fas fa-circle-arrow-up"></i>
-                Inicio  
-            </button>
-        </a>
-        <a href="files/cv.pdf" download="Gatito Gris CV">
-            <button class="btn"> <i class="fas fa-file-pdf"></i>
-                Descargar CV 
-            </button>    
-        </a>
-
+  <footer> 
+    <div class="box-container">
+        <div class="box" >
+            <a href="#presentacion">
+                <button class="btn" > <i class="fas fa-circle-arrow-up"></i>
+                    Inicio  
+                </button>
+            </a>
+        </div>
+    
+        <div class="box" >
+            <a href="files/CV Ejemplo WIllard Rice.pdf" download="CV Willard Rice">
+                <button class="btn" id="botonDescargar"> <i class="fas fa-file-pdf"></i>
+                    Descargar CV 
+                </button>    
+            </a>
+        </div>
     </div>
+    
+  </footer>
     
 
 <script src="js/main.js"> </script>
+
 </body>
 </html>
